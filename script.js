@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   function handleSubmit(submitButton) {
     // 1. Confirm dialog
-    const userConfirmed = confirm("Are you sure you want to submit your rankings?");
-    if (!userConfirmed) return;
+    // const userConfirmed = confirm("Are you sure you want to submit your rankings?");
+    // if (!userConfirmed) return;
   
     // 2. Disable the submit button and show "Submitting..."
     submitButton.disabled = true;
