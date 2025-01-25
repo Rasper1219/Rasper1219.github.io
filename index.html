@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag and Drop Ranking</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- SortableJS from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+
+  <h1>Edge Machine Week 0 Rankings</h1>
+  
+  <!-- Container for the drag-and-drop cards -->
+  <div class="grid-container" id="gridContainer">
+    <!-- data-name attributes are used for final submission.
+         We'll dynamically insert the rank labels via JS. -->
+    <div class="card" data-name="Ryan Adolfs">Ryan Adolfs</div>
+    <div class="card" data-name="David D'Olivo">David D'Olivo</div>
+    <div class="card" data-name="Ryan Annunziato">Ryan Annunziato</div>
+    <div class="card" data-name="Jacob Wilhide">Jacob Wilhide</div>
+    <div class="card" data-name="Justin Miller">Justin Miller</div>
+    <div class="card" data-name="Aidan Clatur">Aidan Clatur</div>
+    <div class="card" data-name="Alex Jackson">Alex Jackson</div>
+    <div class="card" data-name="Austin Hopper">Austin Hopper</div>
+    <div class="card" data-name="Ben Brueggeman">Ben Brueggeman</div>
+    <div class="card" data-name="Brayden Miller">Brayden Miller</div>
+    <div class="card" data-name="Brice Gorman">Brice Gorman</div>
+    <div class="card" data-name="Chris Field">Chris Field</div>
+    <div class="card" data-name="Colin Campbell">Colin Campbell</div>
+    <div class="card" data-name="Dan Sperry">Dan Sperry</div>
+    <div class="card" data-name="Dennis Chaisson">Dennis Chaisson</div>
+    <div class="card" data-name="Elijah Gillette">Elijah Gillette</div>
+    <div class="card" data-name="Garrett Bartlett">Garrett Bartlett</div>
+    <div class="card" data-name="Gavin Woolery">Gavin Woolery</div>
+    <div class="card" data-name="Grant Thigpen">Grant Thigpen</div>
+    <div class="card" data-name="Jack Pierce">Jack Pierce</div>
+    <div class="card" data-name="Jacob Friend">Jacob Friend</div>
+    <div class="card" data-name="Justin Brown">Justin Brown</div>
+    <div class="card" data-name="Lucas Elliot">Lucas Elliot</div>
+    <div class="card" data-name="Luke Tener">Luke Tener</div>
+    <div class="card" data-name="Mario Misiti">Mario Misiti</div>
+    <div class="card" data-name="Hedgie Foerstera">Hedgie Foerstera</div>
+    <div class="card" data-name="Matthew Lage">Matthew Lage</div>
+    <div class="card" data-name="Nathan Beatty">Nathan Beatty</div>
+    <div class="card" data-name="Parker Gunnell">Parker Gunnell</div>
+    <div class="card" data-name="Patrick Hartung">Patrick Hartung</div>
+    <div class="card" data-name="Payton Green">Payton Green</div>
+    <div class="card" data-name="Dominick Pearson">Dominick Pearson</div>
+  </div>
+  
+  <!-- Submit button -->
+  <button id="submitBtn">Submit</button>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* 
+  We use grid-auto-flow: column so items fill top-to-bottom in the first column,
+  then proceed to the second, etc.
+  We'll have enough rows for 12 items per column if needed.
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, auto); /* Enough for 32 items (12 + 12 + 8) */
+    grid-auto-flow: column; /* Fill top-to-bottom, then next column */
+    gap: 16px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  
+  /* Each card */
+  .card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: move;
+    font-family: sans-serif;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    user-select: none; /* prevents text selection while dragging */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* If SortableJS applies a chosen/dragging style, we can define it */
+  .card.sortable-chosen {
+    opacity: 0.6;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* The "dragged" ghost will have this class (by default) */
+  .card.sortable-ghost {
+    opacity: 0.4;
+  }
+  
+  /* We’ll insert the rank label via JS as <span class="rank-label">1.</span> in each card */
+  .rank-label {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  /* Submit button styling */
+  #submitBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #submitBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Basic page styling */
+  body {
+    background-color: #fafafa;
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #333;
+  }
+  
